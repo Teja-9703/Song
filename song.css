@@ -1,0 +1,73 @@
+.full{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+}
+.Song{
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(blue,white,orange);
+    width:350px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    
+}
+
+.im{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    box-shadow: 0 0 10px rgb(252, 255, 50);
+    animation: rotate 20s linear infinite;
+    animation-play-state: paused;
+    
+}
+
+.rotate {
+    animation-play-state: running;
+}
+
+@keyframes rotate{
+    from{ transform: rotate(0deg);}
+    to{ transform: rotate(360deg);}
+}
+
+.mi{
+    background: url("http://www.pixelstalk.net/wp-content/uploads/2016/05/Gradient-Wallpaper-1920x1080.jpg") center;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+    to{
+        background-position-x: -500px;
+    }
+}
+
+.button{
+    display: flex;
+    gap:10px;
+    margin: 30px;
+}
+
+.b1{
+    height: 30px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: aquamarine;
+    box-shadow:0 0 5px rgb(0, 0, 0) ;
+}
+
+.progress-container{
+    
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    padding: 12px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
